@@ -1,0 +1,51 @@
+
+
+body {
+    background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
+    
+}
+
+#conteudo-foto-apresentacao-jhanny{
+    margin: auto;
+    text-align: center;
+    /*background: #c990ff;*/
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(10px);
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+#foto-jhanny{
+    width: 200px;
+    border-radius:  0 20%;
+    box-shadow: 5px 5px #3f0c6e;
+    transform: translateY(10px);
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+}
+
+.centralizar{
+    margin: auto;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(223, 201, 222);
+}
