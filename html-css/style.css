@@ -1,55 +1,164 @@
+html {
+    scroll-behavior: smooth;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background: #ad5389;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #643280, #bd689b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: #0f172a;
 
 }
 
-#conteudo-foto-apresentacao-jhanny{
-    margin: auto;
-    text-align: center;
-    /*background: #c990ff;*/
-    width: 600px;
-    height: 400px;
-    padding: 10px;
-    border-radius: 10px;
-    transform: translateY(10px);
-    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-#foto-jhanny{
-    width: 200px;
-    border-radius:  0 20%;
-    box-shadow: 5px 5px 10px #3f0c6e;
-    transform: translateY(10px);
-    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-
-}
-
-.centralizar{
-    margin: auto;
-    text-align: center;
-    background-color: #d6b1c7;
-    width: 600px;
-    border-radius: 20px;
-}
-
-ul{
-    list-style: none;
+header {
+    margin: 0;
     padding: 0;
+    width: 100%;
+    min-height: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;    
+    font-weight: 500;
+    color: #f8fafc;
+    border-bottom: 1px solid #334155;
+    position: sticky;
+    top: 0;
+    background-color: #0f172a;
 }
 
-h1{
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:rgb(223, 201, 222);
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    color: #f8fafc;
 }
 
-#direitos { 
-    margin: auto;
+ul a{
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 15px; 
+}
+
+ul a:hover {
+    color: #0ea5e9;
+    transition: 0.3s;
+}
+
+li {
+    margin: 20px;
+    list-style: none;
+    margin-top: 30px;
+
+}
+
+h1 {
     text-align: center;
-    font-size: large;
+    margin-top: 10%;
+    font-family:'Inter', sans-serif;
+    font-weight: 1000;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+
+}
+
+.gradiente {
+    background: linear-gradient(90deg,#8b5cf6,#0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.conteudo-inicial {
+    display: flexbox;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #f8fafc;
+    background-color: #0f172a;
+    margin-bottom: 5%;
+    align-items: center;
+    min-height: 400px;
+    
+}
+
+#texto-conteudo-inicial {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color:rgb(192, 192, 192);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: -0.03em;
+    margin-top: 3%;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao-gradiente {
+    background: linear-gradient(90deg,#8b5cf6,#0ea5e9);
+    text-decoration: none;
+    color: #f8fafc;
+    max-width: 190px;
+    min-height: 50px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #8b5cf64d;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    font-family: 'Orbitron', sans-serif;
+    font-size:small;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em; 
+
+}
+.botao-gradiente:hover {
+    box-shadow: 0 0 25px #0ea5e980;
+    margin-bottom: 8%;
+    transform: translateY(-3px);
+
+}
+
+.sobre-mim {
+    width: 100%;
+    background: rgba(30, 41, 59, 0.3);
+    min-height: 300px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10%;
+    gap: 60px;
+}
+
+#minha-foto{
+    width: 290px;
+    height: 350px;
+    padding: 5px;
+    background: linear-gradient(90deg,#8b5cf6,#0ea5e9);
+    /* margin: 10%; */
+    border-radius: 17px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+#texto-foto {
+    /* margin: 10%; */
+    max-width: 600px;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+
 }
