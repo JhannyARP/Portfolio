@@ -192,28 +192,239 @@ h2 {
     }
 }
 
-#projetos {
-    width: 100%;
-    /* background-color: #8b5cf6; */
-    min-height: 500px;
-    padding: 6% ;
-    display:block;
-    justify-content: center;
+
+/* SECTION STACK TECNOLÓGICA */
+
+.contorno{
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 20px 10px 20px 0; 
+    max-width: 950px; 
+    margin: 50px auto 60px auto ;
+}
+
+/* Aqui foi preparado o espaço para receber o conteúdo das tecnologias e linguagens*/
+#tecnologias{
+    font-family: 'Orbitron', sans-serif;
+    color: #f8fafc;
+    padding: 7% 4% 0 4%;
+    text-align: center;
     text-align: center;
 }
 
-#projetos h2{
+#tecnologias h2{
+    margin: 20px 0 20px 0;
+    letter-spacing: 2px;
+}
+
+#tecnologias h4{
+    color: #acabab;
+    text-align: center;
+    width: 100%;
+    margin: 15px auto 0 auto;
+} 
+#tecnologias h5{
+    color: #acabab;
+    text-align: center;
+    width: 100%;
+    margin: 10px auto 20px auto;
+} 
+
+/* Espaço para as linguagens principais, sendo configurado e alinhado ao centro os conteúdos das fotos e deixando-os flexíveis */
+
+.organizacao-linguagens{
+    max-width: 850px;
+    min-height: 150px;
+    margin-left: auto;
+    margin-right: auto;             
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-content: flex-start;
+} 
+
+/* Estilização das fotos com o texto em baixo (criado uma div pequena para armazenar a foto/texto e ficar fácil sua organização e alinhamento) */
+
+.linguagem-com-foto{
+    width: 60px;           
+    margin: 20px;
+}
+
+
+.linguagem-com-foto img{
+    object-fit: contain;
+    margin-bottom: 9px;
+    width: 50px;  
+    height: 50px;
+}
+
+.linguagem-com-foto p{
+    font-size: x-small;
+}
+
+
+/* OUTROS CONHECIMENTOS */
+
+/* Estilização particular das fotos/textos dos 'outros conhecimentos', pois propositalmente foi feito menor por "importância" visual*/
+
+.organizacao-outros-conhecimentos{
+    max-width: 850px;
+    min-height: 100px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-content: flex-start;
+} 
+
+.linguagem-com-foto-outros-conhecimentos{
+    display: flex;         
+    flex-direction: column; 
+    align-items: center;   
+    width: 40px;           
+    margin: 20px;
+}
+
+.linguagem-com-foto-outros-conhecimentos img{
+    object-fit: contain;
+    margin-bottom: 5px;
+    width: 40px;  
+    height: 40px;
+}
+
+.linguagem-com-foto-outros-conhecimentos p{
+    font-size: xx-small;
+}
+
+.botao-cinza {
+    font-family: 'Inter', sans-serif;
+    color: #ebe9e9;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    background-color:#1e293b;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+    margin: 0 10px 0 10px;
+}
+ 
+@media (max-width: 768px) /*Ipad Mini */ {
+    .div-com-logos-das-linguagens {
+        width: 120px;
+    }
+    #outros-conhecimentos{
+        max-width: 250px;
+    }
+
+}
+
+
+/* ECOSYSTEM */
+
+#ecosystem {
     font-family: 'Orbitron', sans-serif;
     color: #f8fafc;
-    font-size: 30px;
-    letter-spacing: 0.1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-#projetos a{
-    text-decoration: none;
+#ecosystem h3{
+    width: 100%;
 }
 
-.card{
+#organizacao-ecosystem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+/*  DIV organização própria para agrupar/armazenar e organizar o 'botões coloridos' */
+
+.div-organizacao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    gap: 20px;
+}
+
+.div-organizacao h4{
+    color: #c2c2c2;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0 40px 0;
+}
+
+.botao-roxo {
+    font-family: 'Inter', sans-serif;
+    color: #a78bfa;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #8b5cf61a;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: #8b5cf6 solid 1px;
+}
+
+.botao-azul {
+    font-family: 'Inter', sans-serif;
+    color: #38bdf8;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+    background-color:#0ea5e91a;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
+    border: #0ea5e9 solid 1px;
+    margin-top: 0;
+} 
+
+/* SOFT SKILLS */
+
+#soft-kills {
+    color: #f8fafc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #0ea5e9; */
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+#soft-kills h3{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+}
+
+.botao-soft-skills{
+    font-family: 'Inter', sans-serif;
+    background-color:#334155;
+    padding: 13px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.botao-soft-skills:hover {
+    background: linear-gradient(90deg,#8b5cf6,#0ea5e9);
+}
+
+/* PROJETOS */
+
+
+
+/*.card{
     width: 280px;
     height: 300px;
     background-color: #1e293b;
@@ -262,278 +473,76 @@ h2 {
     transform: translateY(-15px);
     background: 
         linear-gradient(#1e293b, #1e293b) padding-box, 
-        linear-gradient(45deg, #0ea5e9, #a855f7) border-box;
+        linear-gradient(45deg, #0ea5e9, #992dff) border-box;
+}
+*/
+
+#projetos {
+    width: 100%;
+    /* background-color: #8b5cf6; */
+    min-height: 500px;
+    padding: 0 6% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
 }
 
-
-/* SECTION STACK TECNOLÓGICA */
-
-/* #stack-tecnologica{
+#projetos h2{
     font-family: 'Orbitron', sans-serif;
     color: #f8fafc;
-    padding: 7% 4% 4% 4%;
-    text-align: center;
-    display: flexbox;
-    margin-top: 20px;
-}
-
-#stack-tecnologica h3{
-    margin-bottom: 30px;
-}
-
-#stack-tecnologica h4{
-    color: #c2c2c2;
-    text-align: left;
-    max-width: 950px;
-    align-items: center;
-    margin: 0 auto 0 auto;
-}
-
-#linguagens {
-    display: flex;        
-    flex-direction: row;  
-    flex-wrap: wrap;    
-    justify-content: center;
-    gap: 15px;
-    padding: 10px 20px 20px 20px;
-    margin-bottom: 0px;
-}
-
-.div-com-logos-das-linguagens {
-    background-color: #141f38;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 10px;
-    width: 150px;
-    border: 1px solid #334155;
-}
-
-.linguagem-com-foto{
-    display: flex;         
-    flex-direction: column; 
-    align-items: center;   
-    width: 55px;           
-    margin: 10px;
-}
-
-.linguagem-com-foto img{
-    object-fit: contain;
-    margin-bottom: 9px;
-    width: 60px;  
-    height: 60px;
-}
-
-.linguagem-com-foto p{
-    font-size: x-small;
-}
-
-/* OUTROS CONHECIMENTOS 
-
-#outros-conhecimentos{
-    background-color: #141f38;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.5%;
-    border-radius: 10px;
-    max-width: 350px;
-    gap: 0 40px;
-    border: 1px solid #334155;
-}
-
-#outros-conhecimentos h5{
-    color: #a8a8a8;
-    margin-bottom: 8px;
-    margin-left: 10px;
-    text-align: left;
+    font-size: 30px;
+    letter-spacing: 0.1em;
     width: 100%;
 }
 
-.linguagem-com-foto-outros-conhecimentos{
-    display: flex;         
-    flex-direction: column; 
-    align-items: center;   
-    width: 40px;           
-    margin: 10px;
+#projetos a{
+    text-decoration: none;
 }
 
-.linguagem-com-foto-outros-conhecimentos img{
-    object-fit: contain;
-    margin-bottom: 5px;
-    width: 40px;  
-    height: 40px;
-}
-
-.linguagem-com-foto-outros-conhecimentos p{
-    font-size: x-small;
-}
-
-.contorno{
-    border: 1px solid #334155;
-    border-radius: 10px;
-    padding: 20px;  
-}
-
-@media (max-width: 768px) /*Ipad Mini {
-    .div-com-logos-das-linguagens {
-        width: 120px;
-    }
-    #outros-conhecimentos{
-        max-width: 250px;
-    }
-
-}
-
-
-/* SECTION ECOSYSTEM 
-
-#ecosystem {
-    font-family: 'Orbitron', sans-serif;
-    color: #f8fafc;
-    text-align: center;
+ #card-projeto {
+    width: 900px;
+    height: 500px;
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    margin: 40px auto;
+    position: relative;
 }
 
-#ecosystem h3{
+#card-maior-do-projeto {
+    width: 500px;
+    height: 300px;
+    position: relative; 
+    z-index: 1;
+    border-radius: 0 20px;
+    box-shadow: 10px 10px 0 #2c036d;
+}
+
+#foto-card {
+    position: absolute; 
     width: 100%;
-    margin-bottom: 20px;
+    height: 100%;
+    z-index: -1;
 }
 
-#organizacao-ecosystem {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    
+#foto-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 15px;
 }
 
-.div-organizacao {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 10px;
+#card-menor-do-projeto {
     width: 450px;
-    gap: 5px 20px;
-}
-.div-organizacao h4{
-    color: #c2c2c2;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.ecosystem-roxo {
-    font-family: 'Inter', sans-serif;
-    color: #ebe9e9;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-align: center;
-    background-color: #8b5cf61a;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
-    border: #8b5cf6 solid 1px;
-}
-
-.plataforma-azul {
-    font-family: 'Inter', sans-serif;
-    color: #ebe9e9;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-align: center;
-    background-color:#0ea5e91a;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
-    border: #0ea5e9 solid 1px;
-    margin-top: 0;
-} */
-
-/* Configurações Gerais da Seção */
-#stack-tecnologica, #ecosystem {
-    font-family: 'Orbitron', sans-serif;
-    color: #f8fafc;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.contorno-principal {
-    border: 1px solid #334155;
+    height: 180px;
+    position: absolute; 
+    margin: 80px auto 0 480px;
+    z-index: 2;
+    background: #ffffff1a; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);  
+    border: 1px solid #ffffff33;
     border-radius: 15px;
-    padding: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #0f172a; /* Um tom levemente mais escuro que o fundo */
-}
-
-/* Títulos */
-h3 { margin-bottom: 30px; letter-spacing: 2px; }
-h4 { color: #94a3b8; margin-bottom: 25px; font-size: 0.9rem; text-transform: uppercase; }
-
-/* Grid de Linguagens Principais */
-#linguagens-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.linguagem-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.linguagem-item:hover { transform: translateY(-5px); }
-
-.linguagem-item img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.linguagem-item p {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    color: #cbd5e1;
-}
-
-/* Estilo de Badges para o Ecosystem e Outros */
-.badge-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.badge {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
-    padding: 8px 16px;
-    border-radius: 20px;
-    border: 1px solid #334155;
-    background: #1e293b;
-    color: #e2e8f0;
-}
-
-/* Cores Estratégicas */
-.badge-ia { border-color: #8b5cf6; background: #8b5cf61a; color: #a78bfa; font-weight: bold; } /* Roxo para IA */
-.badge-tech { border-color: #0ea5e9; background: #0ea5e91a; color: #38bdf8; } /* Azul para Backend */
-.badge-soft { border-color: #475569; color: #94a3b8; } /* Cinza para Secundários */
-
-@media (max-width: 768px) {
-    .contorno-principal { padding: 20px; }
+    padding: 20px;
+    color: white;
 }
