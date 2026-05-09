@@ -14,7 +14,7 @@ Criei este portfólio para mostrar, de um jeito prático e bonito, tudo o que ve
 
 - Design Moderno: Utiliza elementos visuais atuais e uma identidade futurista que reflete meu foco em Inteligência Artificial e Ciência de Dados.
 
-- Responsividade Total: Desenvolvido com técnicas de HTML5 e CSS3 para garantir uma navegação fluida e uma boa experiência de usuário em qualquer tamanho de tela.
+- Responsividade Total: Desenvolvido com técnicas de HTML5 e CSS3 para garantir uma navegação fluida e uma boa experiência de usuário em qualquer tamanho de tela, utilizando Media Queries e Flexbox.
 
 📊 Ecossistema de Dados & Lógica (Hard Skills)
 - O portfólio conecta visualmente as tecnologias que utilizo para resolver problemas reais de mercado:
