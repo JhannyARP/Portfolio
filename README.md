@@ -30,6 +30,6 @@ O diferencial deste projeto é demonstrar como utilizo minhas competências inte
 
 - Aprendizado Contínuo: Demonstração de resiliência e adaptabilidade, essenciais para acompanhar a evolução acelerada da IA.
 
-Desenvolvido por: Jhanny
-Foco: Inteligência Artificial & Data Science
+Desenvolvido por: Jhanny |
+Foco: Inteligência Artificial & Data Science |
 Status: 🟢 Ativo e em constante evolução
