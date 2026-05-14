@@ -181,17 +181,6 @@ h2 {
     transition: 0.2s;
 }
 
-@media (max-width: 768px) /*Ipad Mini*/ {
-    #texto-foto {
-        text-align: center;
-        max-width: 630px;
-    }
-    #informacoes-minhas {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
 
 /* SECTION STACK TECNOLÓGICA */
 
@@ -201,6 +190,7 @@ h2 {
     padding: 20px 10px 20px 0; 
     max-width: 950px; 
     margin: 50px auto 60px auto ;
+    background-color: #1e293b4d;
 }
 
 /* Aqui foi preparado o espaço para receber o conteúdo das tecnologias e linguagens*/
@@ -391,6 +381,7 @@ h2 {
     margin-top: 0;
 } 
 
+
 /* SOFT SKILLS */
 
 #soft-kills {
@@ -420,17 +411,40 @@ h2 {
     background: linear-gradient(90deg,#8b5cf6,#0ea5e9);
 }
 
+
 /* PROJETOS */
 
+#projetos {
+    width: 100%;
+    min-height: 500px;
+    padding: 0 6% ;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    text-align: center;
+}
 
+#projetos h2{
+    font-family: 'Orbitron', sans-serif;
+    color: #f8fafc;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    width: 100%;
+    margin-top: 80px;
+}
 
-/*.card{
+#projetos a{
+    text-decoration: none;
+}
+
+/* Criei o '.card' como sendo a div pai e '#foto-card' e 'descricao-card' sendo as div filhos para estilizar separadamente e manter uma organização melhor na hora de programar e deixá-lo flexível.*/
+
+.card{
     width: 280px;
     height: 300px;
     background-color: #1e293b;
     border: #334155 solid 1px;
     border-radius: 10px;
-    margin: 5%;
     transition: 0.4s;
     background: 
         linear-gradient(#1e293b, #1e293b) padding-box, 
@@ -475,74 +489,34 @@ h2 {
         linear-gradient(#1e293b, #1e293b) padding-box, 
         linear-gradient(45deg, #0ea5e9, #992dff) border-box;
 }
-*/
 
-#projetos {
-    width: 100%;
-    /* background-color: #8b5cf6; */
-    min-height: 500px;
-    padding: 0 6% ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
 
-}
 
-#projetos h2{
-    font-family: 'Orbitron', sans-serif;
-    color: #f8fafc;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    width: 100%;
-}
 
-#projetos a{
-    text-decoration: none;
-}
 
- #card-projeto {
-    width: 900px;
-    height: 500px;
-    display: flex;
-    margin: 40px auto;
-    position: relative;
-}
 
-#card-maior-do-projeto {
-    width: 500px;
-    height: 300px;
-    position: relative; 
-    z-index: 1;
-    border-radius: 0 20px;
-    box-shadow: 10px 10px 0 #2c036d;
-}
 
-#foto-card {
-    position: absolute; 
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+/* RODAPÉ */
 
-#foto-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0 15px;
-}
 
-#card-menor-do-projeto {
-    width: 450px;
-    height: 180px;
-    position: absolute; 
-    margin: 80px auto 0 480px;
-    z-index: 2;
-    background: #ffffff1a; 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);  
-    border: 1px solid #ffffff33;
-    border-radius: 15px;
-    padding: 20px;
-    color: white;
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) /*Ipad Mini*/ {
+    #texto-foto {
+        text-align: center;
+        max-width: 630px;
+    }
+
+    #informacoes-minhas {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #projetos {
+        justify-content: center;
+    }
 }
