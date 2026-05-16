@@ -493,18 +493,23 @@ h2 {
 
 /* RODAPÉ */
 
-footer{
-    background-color: #0047ee;
+/* footer{
+    /* background-color: #0047ee; *
     display: flex;
     justify-content: center;
-    min-height: 200px;
+    min-height: 300px;
     flex-wrap: wrap;
+    background-color: #1a2744;
+
 }
 
 footer h3{
     width: 100%;
     height: 50px;
-    background: #f8fafc;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #f8fafc; 
 }
 
 .div-rodape{
@@ -513,8 +518,7 @@ footer h3{
     display: column;
     color: #f8fafc;
     font-family: 'Inter', sans-serif;
-    background-color: #e100ff;
-    height: 100px;
+    height: 150px;
 }
 
 #informacoes-contato-rodape{
@@ -524,17 +528,18 @@ footer h3{
     color: #f8fafc;
     font-family: 'Inter', sans-serif;
     background-color: #e100ff; 
-    height: 100px;*/
+    height: 100px;
 }
 
 #informacoes-contato-rodape a{
-    /* Precisei forçar o color pois nao estava dando resultado só na classe 'div-rodape' os links*/
+    /* Precisei forçar o color pois nao estava dando resultado só na classe 'div-rodape' os links
     color: #f8fafc;
     text-decoration: none;
+    height: 40px;
 }
 
 #navbar-rodape{
-    margin-left: 10px;
+    margin-left: 80px;
 }
 
 #navbar-rodape a{
@@ -542,6 +547,132 @@ footer h3{
     text-decoration: none;
 }
 
+#titulo-informacoes-rodape{
+    color: #f8fafc;
+    height: 30px;
+    margin-top: 0;
+    text-align: left;
+} */
+
+/* Configuração Geral do Rodapé */
+footer {
+    background-color: #0a0b10; /* Fundo escuro premium */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Linha sutil no topo */
+    padding: 60px 20px 30px 20px;
+    font-family: 'Inter', sans-serif;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização da Frase de Efeito */
+.footer-cta {
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.footer-cta h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #e2e8f0;
+    margin: 0;
+}
+
+.footer-cta h3 span {
+    color: #00f2ff; /* Destaque neon futurista */
+    font-weight: 700;
+}
+
+/* Linha divisória interna */
+.footer-divider {
+    width: 100%;
+    max-width: 1100px;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Alinhamento das Colunas */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 120px; /* Espaço elegante entre as duas colunas */
+    width: 100%;
+    max-width: 1100px;
+    flex-wrap: wrap;
+}
+
+.div-rodape {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.titulo-coluna {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Reset de Listas e Links */
+.div-rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Controla o espaçamento vertical entre links sem usar <br> */
+}
+
+.div-rodape a {
+    color: #94a3b8; /* Cor cinza mais suave para o link em repouso */
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+    display: inline-block;
+}
+
+/* Microinteração de Hover (UX) */
+.div-rodape a:hover {
+    color: #00f2ff; /* Acende o link ao passar o mouse */
+    transform: translateX(5px); /* Move levemente para a direita dando sensação de dinamismo */
+}
+
+/* Rodapé bem inferior */
+.footer-bottom {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #64748b;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .footer-container {
+        gap: 40px;
+        text-align: center;
+    }
+    .div-rodape ul {
+        align-items: center;
+    }
+    .div-rodape a:hover {
+        transform: translateY(-2px); /* No celular é melhor mover para cima do que para o lado */
+    }
+}
 
 
 
