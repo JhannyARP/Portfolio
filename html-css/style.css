@@ -498,12 +498,15 @@ footer{
     background-color: #1a2744;
     font-family: 'Inter', sans-serif;
     text-align: center;
+        gap: 0 100px;
 }
 
 footer h3{
     height: 50px;
     width: 100%;
     margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-content: center;
     border-bottom: 1px solid #334155;
     color: #f8fafc;
@@ -528,6 +531,11 @@ footer h3{
     height: 30px;
     color: #f8fafc;
     border: none;
+    margin-top: 5px;
+}
+
+#navbar-rodape{
+    width: 100px;
 }
 
 
@@ -560,11 +568,26 @@ footer h3{
         justify-content: center;
     }
 
-    /* footer{
-        display: block;
-    } */
+    footer{
+        gap: 40px 0;
+    }
+
+    .div-rodape{
+        text-align: center;
+    }
+
+    #navbar-rodape{
+        min-width: 300px;
+    }
+
+}
+
+@media (max-width: 871px) {
 
     footer h3{
-    min-height: 40px;
+        height: 80px;
+
+    }
 }
-}
+
+
