@@ -300,16 +300,6 @@ h2 {
     border: 1px solid #334155;
     margin: 0 10px 0 10px;
 }
- 
-@media (max-width: 768px) /*Ipad Mini */ {
-    .div-com-logos-das-linguagens {
-        width: 120px;
-    }
-    #outros-conhecimentos{
-        max-width: 250px;
-    }
-
-}
 
 
 /* ECOSYSTEM */
@@ -493,89 +483,55 @@ h2 {
 
 /* RODAPÉ */
 
+/* Foi realizada a reconstrução do rodapé para maior flexibilidade com um planejamento melhor, e facilitar assim a manutenção.
+
+SENDO REALIZADO O SEGUINTE PLANO:
+
+- Criada a div 'div-rodape' para armazenar os conteúdos do rodapé e facilitar a organização e alinhamento dos conteúdos, e dentro dela foi criado as divs com a classe 'div-rodape' e id 'navbar-rodape' para organizar melhor os conteúdos de cada parte do rodapé (informações de contato e navegação) e facilitar a manutenção futura, além disso, foi criado a classe 'titulo-informacoes-rodape' para estilizar os títulos de cada parte do rodapé (Contato e Início) de forma mais fácil, rápida e exclusiva.
+  */
+
 footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 350px;
+    min-height: 300px;
     background-color: #1a2744;
-
+    font-family: 'Inter', sans-serif;
+    text-align: center;
 }
 
 footer h3{
+    height: 50px;
     width: 100%;
-    min-height: 30px;
-    text-align: center;
-    /* margin-top: 30px; */
-    font-family: 'Inter', sans-serif;
-    color: #f8fafc; 
-    border-bottom: 1px solid #334155;
+    margin-top: 30px;
     justify-content: center;
-    /* background-color: #0051ff; */
-
-    margin: 0;               /* Zera todas as margens padrão que vêm do navegador */
-    padding-top: 20px;       /* Controla o espaço interno no topo do rodapé */
-    /* padding-bottom: 20px;    Controla o espaço interno antes da linha de borda */
-    /* margin-bottom: 30px; */
+    border-bottom: 1px solid #334155;
+    color: #f8fafc;
 }
 
 .div-rodape{
+    display:flex;
+    flex-wrap: wrap;
+    margin:20px;
+    width: 300px;
     text-align: left;
-    align-items: left;
-    display: column;
-    color: #f8fafc;
-    font-family: 'Inter', sans-serif;
-    height: 150px;
-    line-height: 1.8;
-    margin-bottom: 40px;
 }
 
-#informacoes-contato-rodape{
-    align-items: left;
-    display: column;
-    color: #f8fafc;
-    font-family: 'Inter', sans-serif;
-    height: 100px;
-}
-
-#informacoes-contato-rodape a{
-    /* Precisei forçar o color pois nao estava dando resultado só na classe 'div-rodape' os links */
-    color: #b9b9b9;
-    text-decoration: none;
-}
-
-#navbar-rodape{
-    margin-left: 150px;
-}
-
-#navbar-rodape a{
-    color: #b9b9b9;
-    text-decoration: none;
-}
-
-#titulo-informacoes-rodape{
-    color: #f8fafc;
-    height: 30px;
-    margin-top: 0;
-    text-align: left;
-    border-bottom: none;
-
-} 
-
-/* Rodapé bem inferior */
-.footer-bottom {
-    margin-top: 60px;
+.div-rodape a{
     width: 100%;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: 20px;
+    color: #b6b6b6;
+    text-decoration: none;
+    padding: 5px 0;
 }
 
-.footer-bottom p {
-    color: #64748b;
-    font-size: 0.85rem;
-    margin: 0;
+.titulo-informacoes-rodape{
+    height: 30px;
+    color: #f8fafc;
+    border: none;
 }
+
+
+
 
 
 /* MEDIA QUERIES */
@@ -590,6 +546,14 @@ footer h3{
     #informacoes-minhas {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .div-com-logos-das-linguagens {
+        width: 120px;
+    }
+
+    #outros-conhecimentos{
+        max-width: 250px;
     }
 
     #projetos {
