@@ -566,8 +566,8 @@ footer h3{
 
 #contribuicao{
     width: 100%;
-    height: 500px;
-    background-color: #8b5cf6;
+    min-height: 500px;
+    /* background-color: #8b5cf6; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -575,11 +575,60 @@ footer h3{
 }
 
 #div-organizacao-contribuicao{
-    background-color: #ff0a0a;
-    height: 250px;
+    /* background-color: #ff0a0a; */
+    min-height: 250px;
     width: 1100px;
+    justify-content: center;
+    display: flex; 
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 10px 0 10px;
 }
 
+#div-organizacao-contribuicao h3{
+    width: 100%;
+    /* background-color: #4284ee; */
+    max-height: 30px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Orbitron', sans-serif;
+    color: #0ea5e9;
+}
+
+.div-organização-conteudo-da-contribuicao{
+    width: 300px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #1d7ba7; */
+    margin: auto 20px ;
+}
+
+.div-organização-conteudo-da-contribuicao h4{
+    width: 100%;
+    height: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #8b5cf6;
+    text-align: left;
+    /* background-color: #a71d1d; */
+}
+
+.div-organização-conteudo-da-contribuicao p {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    color: #c0c0c0;
+    text-align: left;
+    /* background-color: #a71d9c; */
+    font-size: 14px;
+}
+
+/* O QUE PRECISA SER FEITO AGORA?
+- Acertar o tamanho da fonte
+- Acertar grossura da fonte
+- Acertar espaçamento entre linhase letras
+- Acertar espaçamento entre os conteúdos (título e descrição) e entre os próprios conteúdos (conteúdo 1, 2 e 3)
+- Estilizar o card cinza que contem o conteúdo (cor e sombra)
+ */
 
 
 
@@ -624,6 +673,9 @@ footer h3{
     #navbar-rodape{
         min-width: 300px;
     }
+    #div-organizacao-contribuicao h3{
+        max-height: 50px;
+    }
 
 }
 
@@ -632,6 +684,13 @@ footer h3{
     footer h3{
         height: 80px;
 
+    }
+}
+
+@media (max-width: 682px) {
+
+    #contribuicao{
+        min-height: 700px;
     }
 }
 
