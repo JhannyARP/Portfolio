@@ -62,6 +62,7 @@ LinkedIn: https://www.linkedin.com/in/jhanny-aparecida-rebeiko-pianovski-7581b53
 GitHub: https://github.com/JhannyARP
 
 E-mail: aparecidajhanny@gmail.com
-WhatsApp: +55 (41)99938-4954
+
+WhatsApp: +55 (41) 99938-4954
 
 Desenvolvido por: Jhanny | Foco: Inteligência Artificial & Data Science | Status: 🟢 Ativo e em constante evolução
