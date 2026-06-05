@@ -5,9 +5,11 @@ Este portfólio está sendo desenvolvido para documentar minha jornada e compet�
 ## 💻 Arquitetura de Interface & Core Tecnológico
 O projeto foi construído sobre os pilares da modernidade e performance, utilizando as linguagens fundamentais da web e ferramentas de design para criar uma vitrine de alto impacto:
 
-### Estruturação com HTML5: Implementação de uma arquitetura semântica e organizada, garantindo que o conteúdo seja acessível e bem interpretado por motores de busca (SEO).
+#### Estruturação com HTML5:
+Implementação de uma arquitetura semântica e organizada, garantindo que o conteúdo seja acessível e bem interpretado por motores de busca (SEO).
 
-### Estilização com Modern CSS3: Aplicação de folhas de estilo avançadas para criar uma identidade visual única, utilizando variáveis globais, efeitos de profundidade e controle absoluto de layout.
+### Estilização com Modern CSS3:
+Aplicação de folhas de estilo avançadas para criar uma identidade visual única, utilizando variáveis globais, efeitos de profundidade e controle absoluto de layout.
 
 ### Tipografia Digital (Google Fonts): Integração de fontes modernas (como Inter e Orbitron) via Google Fonts, elevando a legibilidade, o carregamento de alta performance e a sofisticação da interface.
 
