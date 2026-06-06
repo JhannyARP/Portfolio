@@ -12,44 +12,6 @@ body {
     background-color: #0f172a;
 }
 
-/* header {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 70px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;    
-    font-weight: 500;
-    color: #f8fafc;
-    border-bottom: 1px solid #334155;
-    position: sticky;
-    top: 0;
-    background-color: #0f172a;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    color: #f8fafc;
-}
-
-ul a{
-    color: #f8fafc;
-    text-decoration: none;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-ul a:hover {
-    color: #0ea5e9;
-}
-
-li {
-    margin: 20px;
-    list-style: none;
-    margin-top: 30px;
-} */
-
 header {
     margin: 0;
     padding: 0;
@@ -94,73 +56,8 @@ li {
     list-style: none;
 }
 
-/* Esconde o checkbox e o ícone na tela de PC */
 #menu-toggle, .menu-icon {
     display: none;
-}
-
-/* ==========================================================================
-   MEDIA QUERY: Telas menores ou iguais ao iPad Air (1024px)
-   ========================================================================== */
-@media (max-width: 1024px) {
-    
-    /* 1. Estiliza o botão de 3 risquinhos */
-    .menu-icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 20px;
-        cursor: pointer;
-        position: absolute;
-        right: 20px; /* Joga o quadradinho para o canto direito */
-        top: 25px;   /* Alinha verticalmente no header */
-        z-index: 10;
-    }
-
-    /* Cria as 3 linhas do hamburguer */
-    .menu-icon span {
-        display: block;
-        height: 3px;
-        width: 100%;
-        background-color: #f8fafc;
-        border-radius: 3px;
-        transition: 0.3s ease-in-out;
-    }
-
-    /* 2. Transforma a lista de links em um menu suspenso (escondido por padrão) */
-    ul {
-        display: none; /* Esconde o menu */
-        flex-direction: column;
-        position: absolute;
-        top: 70px; /* Começa logo abaixo do header */
-        left: 0;
-        width: 100%;
-        background-color: #0f172a;
-        border-bottom: 1px solid #334155;
-        padding: 20px 0;
-    }
-
-    ul li {
-        margin: 15px 0;
-        text-align: center; /* Centraliza os links no menu aberto */
-    }
-
-    /* 3. A MÁGICA: Quando o checkbox for marcado, mostra o menu */
-    #menu-toggle:checked ~ ul {
-        display: flex;
-    }
-
-    /* Opcional: Transforma o hamburguer em um "X" quando estiver aberto */
-    #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    #menu-toggle:checked ~ .menu-icon span:nth-child(2) {
-        opacity: 0;
-    }
-    #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
 }
 
 h1 {
@@ -841,6 +738,63 @@ footer h3{
         height: 45px;
     }
 
+}
+
+
+@media (max-width: 1024px) /* iPad Air*/ {
+
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 25px;  
+        z-index: 10;
+    }
+
+    .menu-icon span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #f8fafc;
+        border-radius: 3px;
+        transition: 0.3s ease-in-out;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; 
+        left: 0;
+        width: 100%;
+        background-color: #0f172a;
+        border-bottom: 1px solid #334155;
+        padding: 20px 0;
+    }
+
+    ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    #menu-toggle:checked ~ ul {
+        display: flex;
+    }
+
+    #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
 }
 
 @media (max-width: 871px) {
